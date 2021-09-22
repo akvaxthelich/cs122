@@ -8,8 +8,19 @@ public class CPU extends Players{
 		
 		super(name, team, life);
 		
-		
+		this.strength = strength;
 		
 	}
 	
+	private void attack(Players p) {
+		
+		p.decreaseLife(strength);
+		
+	}
+	
+	private void defend() {
+		
+		System.out.println(this.name + " is defending.");
+		
+	}
 }
