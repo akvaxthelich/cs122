@@ -12,15 +12,22 @@ public class CPU extends Players{
 		
 	}
 	
-	private void attack(Players p) {
+	public void attack(Players p) {
 		
 		p.decreaseLife(strength);
 		
 	}
 	
-	private void defend() {
+	public void defend() {
 		
 		System.out.println(this.name + " is defending.");
 		
 	}
+	
+	public void decreaseLife() {
+		
+		//implementation
+		
+	}
+	
 }
