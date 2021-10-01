@@ -4,11 +4,19 @@ package classSamples.polymorphism.SearchingAndSorting;
 public class Section{
 
 	
+	public static void doStuff() {
+		
+		doStuff();
+		
+	}
+	
 	
 	public static void main(String[] args) {
 		//create 5 student objects out of order
 		//use binary search to sort, then search for a specific student.
 	
+		
+		doStuff();
 		
 		Student john = new Student("Jane Doe", 20);
 		Student jane = new Student("John Smith", 21);
