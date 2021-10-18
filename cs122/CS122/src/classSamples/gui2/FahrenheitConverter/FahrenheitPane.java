@@ -1,4 +1,4 @@
-package classSamples.gui_2.FahrenheitConverter;
+package classSamples.gui2.FahrenheitConverter;
 
 import javafx.event.ActionEvent;
 import javafx.geometry.HPos;
@@ -59,8 +59,20 @@ public class FahrenheitPane extends GridPane {
 	// presses the return key while in the text field.
 	// --------------------------------------------------------------------
 	public void processReturn(ActionEvent event) {
-		int fahrenheitTemp = Integer.parseInt(fahrenheit.getText());
-		int celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
-		result.setText(celsiusTemp + "");
+		try {
+			
+			int fahrenheitTemp = Integer.parseInt(fahrenheit.getText());
+			int celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
+			result.setText(celsiusTemp + "");
+			
+		}
+		catch(Exception e){
+			
+			
+			result.setText("CRITICAL ERROR");
+		}
+		
+		
+		
 	}
 }
