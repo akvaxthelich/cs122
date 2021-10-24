@@ -25,7 +25,9 @@ public class GenBoxes extends Application {
 			
 			int xPos = gen.nextInt(550) + 1;
 			int yPos = gen.nextInt(550) + 1;
-
+				
+			
+			
 			int width = gen.nextInt(50) + 1;
 			int height = gen.nextInt(50) + 1;
 
@@ -65,6 +67,7 @@ public class GenBoxes extends Application {
 		primaryStage.setTitle("Rects !!!");
 		
 		primaryStage.setScene(scn);
+		
 		primaryStage.show();
 	}
 
